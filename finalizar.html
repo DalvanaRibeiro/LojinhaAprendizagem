@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Finalizar Compra</h1>
+    </header>
+
+    <!-- Formulário de finalização -->
+    <main>
+        <section class="checkout-container">
+            <!-- Resumo do Produto -->
+            <div class="product-summary">
+                <img src="https://via.placeholder.com/300" alt="Imagem do Produto">
+                <h2>Produto 1</h2>
+                <p><strong>Preço:</strong> R$ 99,90</p>
+                <p><strong>Quantidade:</strong> 1 unidade</p>
+                <p><strong>Total:</strong> R$ 99,90</p>
+            </div>
+
+            <!-- Formulário de compra -->
+            <form class="checkout-form">
+                <h2>Informações da Venda</h2>
+
+                <label for="seller-name">Nome do Vendedor:</label>
+                <input type="text" id="seller-name" placeholder="Digite o nome do vendedor" required>
+
+                <label for="buyer-id">Identificação do Comprador:</label>
+                <input type="text" id="buyer-id" placeholder="Digite a identificação" required>
+
+                <label for="payment-method">Método de Pagamento:</label>
+                <select id="payment-method" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="credit-card">Cartão de Crédito</option>
+                    <option value="debit-card">Cartão de Débito</option>
+                    <option value="cash">Dinheiro</option>
+                </select>
+
+                <button type="submit">Concluir Venda</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
